@@ -28,7 +28,7 @@ class App implements IApp {
         controllers.forEach((controller) => {
             this.app.use('/api', controller.router)
             this.app.get('/', (req: Request, res: Response) => {
-                res.send('NodeLS + Express + PostgreSQL')
+                res.send('NodeJS + Express + PostgreSQL')
             })
         })
     }
